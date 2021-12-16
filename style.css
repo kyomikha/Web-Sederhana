@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*STYLE*/
+body {
+	font:  16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	background-image: url(moroccan-flower-dark/moroccan-flower-dark.png);
+	/*background image yang diambil dari web pattern tidak boleh diubah namanya dan di file imagenya harus diakhiri.png/.jpg walaupun file tersebut tidak ada.png/.jpg*/
+	color: #333;
+}
+
+.top-bar {
+	font: bolder 15px/10px arial black;
+	padding-top: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background-color: darkgray;
+	border-bottom: 5px solid brown;
+	z-index: 1;
+}
+
+.container {
+	width: 960px;
+	margin: 80px auto;
+	background-color: white;
+}
+
+.twitter {
+	width: 200px;
+	height: 200px;
+	background-image: url(Twitter-icon.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top: 66px;
+	right: 168px;
+}
+
+.header {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+.header .judul {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+
+.header a {
+	text-decoration: underline;
+	color: salmon;
+	padding: 5px;
+}
+
+.header a:hover {
+	background-color: lightblue;
+	color: white;
+}
+
+.hero {
+	height: 300px;
+	background-image: url(IMG-1.jpg);
+	background-size: cover;
+	background-position: 0 -160;
+	border-top: 5px solid salmon;
+	border-bottom: 5px solid lightskyblue;
+}
+
+/*MAIN*/
+.main {
+	width: 600px;
+	padding: 25px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h2 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.main .penulis {
+	font-size: 15px;
+	margin-top: -4px;
+}
+
+.main .penulis a {
+	color: rebeccapurple;
+	text-decoration: none;
+}
+
+.main p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	text-align: justify;
+}
+
+/*SIDEBAR*/
+.sidebar {
+	width: 300px;
+	padding: 20px;
+	float: right;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+
+.sidebar img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding-right: 25px;
+}
+
+.sidebar p {
+	font: bold 12px/18px arial;
+	text-align: justify;
+}
+
+/*FOOTER*/
+.footer {
+	background-color: white;
+	padding: 10px;
+}
+
+.footer .copy {
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	background-color: black;
+}
+
+/*CLEARFIX*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
